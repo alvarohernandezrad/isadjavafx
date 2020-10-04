@@ -16,11 +16,12 @@ public class ComboBoxExperiments extends Application  {
 
         ComboBox comboBox = new ComboBox();
 
+
         comboBox.getItems().add("Choice 1");
         comboBox.getItems().add("Choice 2");
         comboBox.getItems().add("Choice 3");
 
-        comboBox.setEditable(true);
+        comboBox.setEditable(false); //comboBox-ean ez da idazteko aukera ematen parametro moduan FALSE emanez.
 
         comboBox.setOnAction(e -> {
             System.out.println( comboBox.getValue());

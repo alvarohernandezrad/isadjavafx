@@ -12,6 +12,11 @@ plugins {
     id 'org.openjfx.javafxplugin' version '0.0.7'
 }
 
+dependencies{
+    implementation 'com.google.code.gson:gson:2.8.6'
+    implementation 'junit:junit:4.12'
+}
+
 sourceCompatibility = 11
 targetCompatibility = 11
 
@@ -19,7 +24,7 @@ version = '0.0.1'
 group = 'ehu.isad'
 
 // ext.moduleName = 'gradlejavafxhelloworld'
-mainClassName = "$moduleName/ehu.isad.App"
+mainClassName = "$moduleName/ehu.isad.OpenLibrary"
 
 
 javafx {

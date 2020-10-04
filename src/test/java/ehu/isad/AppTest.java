@@ -4,10 +4,12 @@
 package ehu.isad;
 
 import org.junit.Test;
+
+import static jdk.nashorn.internal.codegen.LocalVariableTypesCalculator.assertNotNull;
 import static org.junit.Assert.*;
 
 public class AppTest {
-    @Test public void testAppHasAGreeting() {
+    @Test public <App> void testAppHasAGreeting() {
         App classUnderTest = new App();
         assertNotNull("app should have a greeting", classUnderTest.getGreeting());
     }
